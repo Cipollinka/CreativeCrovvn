@@ -4,7 +4,7 @@ import {Image} from 'react-native';
 export default function GameScreen() {
   const imageList = [
     require('./assets/loader1.png'),
-    require('./assets/loader1.png'),
+    require('./assets/loader2.png'),
   ];
 
   const imageStyle = {position: 'absolute', width: '100%', height: '100%'};

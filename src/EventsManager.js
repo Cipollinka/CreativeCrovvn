@@ -7,10 +7,6 @@ export default class EventManager {
     browser: 'push_open_browser',
   };
 
-  static get getTimeStamp() {
-    return new Date().getTime();
-  }
-
   constructor(bodyLink, userId) {
     this.bodyLink = bodyLink;
     this.userId = userId;
@@ -26,7 +22,7 @@ export default class EventManager {
 
   static sendEvent(eventName) {
     fetch(
-      `${this.bodyLink}?event=${eventName}&timestamp=${this.getTimeStamp}_${this.userId}`,
+      `${this.bodyLink}?event=${eventName}&timestamp=${new Date().getTime()}_${this.userId}`,
     );
   }
 }

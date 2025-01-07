@@ -56,6 +56,7 @@
 		5B7EB9410499542E8C5724F5 /* Pods-creative_crown-creative_crownTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-creative_crown-creative_crownTests.debug.xcconfig"; path = "Target Support Files/Pods-creative_crown-creative_crownTests/Pods-creative_crown-creative_crownTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-creative_crown.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-creative_crown.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6461AF50851E4679BB5C4879 /* SFPRODISPLAYBLACKITALIC.OTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SFPRODISPLAYBLACKITALIC.OTF; path = ../src/assets/fonts/SFPRODISPLAYBLACKITALIC.OTF; sourceTree = "<group>"; };
+		6A1F6C172D2DDB8F003981B0 /* creative_crown.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = creative_crown.entitlements; path = creative_crown/creative_crown.entitlements; sourceTree = "<group>"; };
 		78926B3798424A1381898D71 /* SFPRODISPLAYBOLD.OTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SFPRODISPLAYBOLD.OTF; path = ../src/assets/fonts/SFPRODISPLAYBOLD.OTF; sourceTree = "<group>"; };
 		78EA659B02A24590B26624FA /* SFPRODISPLAYLIGHTITALIC.OTF */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SFPRODISPLAYLIGHTITALIC.OTF; path = ../src/assets/fonts/SFPRODISPLAYLIGHTITALIC.OTF; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = creative_crown/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		13B07FAE1A68108700A75B9A /* creative_crown */ = {
 			isa = PBXGroup;
 			children = (
+				6A1F6C172D2DDB8F003981B0 /* creative_crown.entitlements */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -513,6 +515,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = creative_crown/creative_crown.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = creative_crown/Info.plist;
@@ -541,6 +544,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = creative_crown/creative_crown.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
 				INFOPLIST_FILE = creative_crown/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;

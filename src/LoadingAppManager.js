@@ -31,7 +31,7 @@ export default function LoadingAppManager() {
 
   return (
     <View style={styleView}>
-      <Image style={styleImage} source={require('./assets/loader1.png')} />
+      <Image style={styleImage} source={require('./assets/loader2.png')} />
       <ActivityIndicator color={'white'} />
       <Text style={styleText}>Loading{dots}</Text>
     </View>

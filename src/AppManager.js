@@ -52,7 +52,6 @@ export default function AppManager() {
 
   // робимо запит на відстеження
   async function getAdID() {
-    OneSignal.initialize(Params.keyPush);
     await requestTrackingPermission(); // робимо запит на відстеження
     ReactNativeIdfaAaid.getAdvertisingInfoAndCheckAuthorization(true).then(
       res => {
@@ -216,6 +215,7 @@ export default function AppManager() {
   }
 
   useEffect(() => {
+    OneSignal.initialize(Params.keyPush);
     getUserID();
     setTimeout(() => {
       EventManager.setParams(Params.bodyLin, userID.current);

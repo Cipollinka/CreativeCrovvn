@@ -12,6 +12,7 @@ import WebView from 'react-native-webview';
 
 export default function AppManagerChild({navigation, route}) {
   const linkRefresh = route.params.data;
+  console.log(linkRefresh);
 
   const webViewRef = useRef(null);
 
@@ -151,7 +152,7 @@ export default function AppManagerChild({navigation, route}) {
           width: 30,
           height: 30,
           position: 'absolute',
-          bottom: 5,
+          bottom: 0,
           left: 25,
           alignItems: 'center',
           justifyContent: 'center',
@@ -161,7 +162,7 @@ export default function AppManagerChild({navigation, route}) {
         }}>
         <Image
           source={require('./assets/_back.png')}
-          style={{width: '85%', height: '85%', resizeMode: 'contain'}}
+          style={{width: 20, height: 20, resizeMode: 'contain'}}
         />
       </TouchableOpacity>
 

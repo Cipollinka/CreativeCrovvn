@@ -229,7 +229,7 @@ export default function AppManagerMain({navigation}) {
             width: 30,
             height: 30,
             position: 'absolute',
-            bottom: 5,
+            bottom: 0,
             left: 25,
             alignItems: 'center',
             justifyContent: 'center',
@@ -237,7 +237,7 @@ export default function AppManagerMain({navigation}) {
           onPress={isBackClick}>
           <Image
             source={require('./assets/_back.png')}
-            style={{width: '85%', height: '85%', resizeMode: 'contain'}}
+            style={{width: 20, height: 20, resizeMode: 'contain'}}
           />
         </TouchableOpacity>
 
@@ -246,7 +246,7 @@ export default function AppManagerMain({navigation}) {
             width: 30,
             height: 30,
             position: 'absolute',
-            bottom: 5,
+            bottom: 0,
             right: 25,
             alignItems: 'center',
             justifyContent: 'center',
