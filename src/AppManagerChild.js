@@ -161,7 +161,7 @@ export default function AppManagerChild({navigation, route}) {
         }}>
         <Image
           source={require('./assets/_back.png')}
-          style={{width: '90%', height: '90%', resizeMode: 'contain'}}
+          style={{width: '85%', height: '85%', resizeMode: 'contain'}}
         />
       </TouchableOpacity>
 
