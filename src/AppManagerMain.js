@@ -21,7 +21,6 @@ export default function AppManagerMain({navigation}) {
   async function getSavedParams() {
     await Storage.get('link').then(res => {
       setLinkRefresh(res);
-      console.log(linkRefresh);
     });
   }
   useEffect(() => {
@@ -89,7 +88,6 @@ export default function AppManagerMain({navigation}) {
 
   const onShouldStartLoadWithRequest = event => {
     let currentUrl = event.url;
-    // console.log(currentUrl);
 
     try {
       if (
@@ -128,7 +126,6 @@ export default function AppManagerMain({navigation}) {
   const stateChange = navState => {
     const currentUrl = navState.url;
     checkURL.current = currentUrl;
-    console.log(currentUrl);
     checkLockedURL(currentUrl);
   };
 
@@ -203,16 +200,15 @@ export default function AppManagerMain({navigation}) {
                 );
               }
             }}
-            onOpenWindow={syntheticEvent => {
-              const {nativeEvent} = syntheticEvent;
-              const {targetUrl} = nativeEvent;
-              try {
-                if (Linking.canOpenURL(targetUrl)) {
-                  navigation.navigate('child', {data: targetUrl});
-                }
-              } catch (error) {}
-            }}
-            useWebView2={true}
+            // onOpenWindow={syntheticEvent => {
+            //   const {nativeEvent} = syntheticEvent;
+            //   const {targetUrl} = nativeEvent;
+            //   try {
+            //     if (Linking.canOpenURL(targetUrl)) {
+            //       navigation.navigate('child', {data: targetUrl});
+            //     }
+            //   } catch (error) {}
+            // }}
             setSupportMultipleWindows={false}
             allowFileAccess={true}
             showsVerticalScrollIndicator={false}
@@ -220,7 +216,8 @@ export default function AppManagerMain({navigation}) {
             style={{flex: 1}}
             ref={webViewRef}
             userAgent={
-              'Mozilla/5.0 (iPhone; CPU iPhone OS 18_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 Safari/604.1 Version/18.1'
+              '\n' +
+                'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.3'
             }
           />
         </SafeAreaView>
